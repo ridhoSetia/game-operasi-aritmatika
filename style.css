@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  color: #333;
+  overflow: hidden;
+}
+
+body {
+  background: lightgreen;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box-result {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  margin: 0 20px;
+}
+
+.flex-start button {
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  margin: 5px;
+}
+
+.flex-start button:active {
+  scale: 0.9;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.wrapper .number,
+.wrapper .operasi {
+  font-size: 5rem;
+  display: none;
+  animation: animasiNomor 0.1s forwards;
+}
+
+@keyframes animasiNomor {
+  0% {
+    scale: 0;
+  }
+
+  70% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+.hasilOperasiAritmatika {
+  display: none;
+  animation: animasiNomor 0.1s forwards;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+label {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: animasiNomor 0.1s forwards;
+  height: 100vh;
+}
+
+input {
+  background: #fff;
+  border: none;
+  height: 30px;
+  font-size: 20px;
+  width: 60%;
+  margin: 0 0 0 15px;
+}
+
+button[type="submit"] {
+  height: 30px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: -5px;
+}
+
+.refresh {
+  position: absolute;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}

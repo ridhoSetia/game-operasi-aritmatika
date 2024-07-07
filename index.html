@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Operasi Aritmatika</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <button class="refresh">Restart</button>
+  <div class="box-result">
+    <h1 class="hasilOperasiAritmatika">Hasil : 0</h1>
+  </div>
+  <div class="flex-start">
+    <button class="mulaiPerhitungan" onclick="mulaiPerhitungan()">
+      Mulai
+    </button>
+  </div>
+  <div class="wrapper">
+    <h1 class="number angka1">0</h1>
+    <h1 class="operasi aritmatika1">+</h1>
+    <h1 class="number angka2">0</h1>
+    <h1 class="operasi aritmatika2">*</h1>
+    <h1 class="number angka3">0</h1>
+    <h1 class="operasi aritmatika3">-</h1>
+    <h1 class="number angka4">0</h1>
+    <h1 class="operasi aritmatika4">+</h1>
+    <h1 class="number angka5">0</h1>
+    <h1 class="operasi aritmatika5">*</h1>
+    <h1 class="number angka6">0</h1>
+    <h1 class="operasi aritmatika6">-</h1>
+    <h1 class="number angka7">0</h1>
+    <h1 class="operasi aritmatika7">*</h1>
+    <h1 class="number angka8">0</h1>
+    <h1 class="operasi aritmatika8">-</h1>
+    <h1 class="number angka9">0</h1>
+    <h1 class="operasi aritmatika9">+</h1>
+    <h1 class="number angka10">0</h1>
+  </div>
+  <label class="jawab" for="jawab">
+    <form id="myForm" onsubmit="jawab(event)">
+      <input class="inputJawab" type="number" />
+      <button type="submit">Jawab</button>
+    </form>
+  </label>
+  <script src="script.js"></script>
+</body>
+
+</html>
